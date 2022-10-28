@@ -23,12 +23,19 @@ h3 {
   margin-bottom: 24px;
 }
 
+h1 {
+  font-size: clamp(3rem, 1vw + 2.8rem, 3.5rem);
+  line-height: 1;
+}
+
 h2 {
   font-size: 32px;
+  line-height: 1.12;
 }
 
 h3 {
   font-size: 24px;
+  line-height: 1.167;
 }
 
 p {
@@ -39,32 +46,27 @@ p {
   max-width: 1170px;
   padding: 0 24px;
   position: relative;
-  margin: auto;
-}
-
-.wrapper::before {
-  left: -255px;
-  top: 951px;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding-top: 24px;
   margin-bottom: 64px;
 }
 
-    
-.Product{
+.Product {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 60px;
+  gap: 64px;
 }
 
-.Product_content, .Product_img{
-    margin: 0 auto;
+.Product_content,
+.Product_img {
+  margin: 0 auto;
 }
 
 .Product_content {
@@ -79,54 +81,51 @@ nav {
   margin-top: 40px;
 }
 
-.Product_group a{
-    margin-right: 32px;
+.Product_group a {
+  margin-right: 32px;
 }
 
-.Product_group span{
-    flex: 1;
+.Product_group span {
+  flex: 1;
 }
 
 .Product_img {
   background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-keyboard.jpg")
-  center/cover no repeat;
+    center/cover no-repeat;
   width: 372px;
   height: 331px;
 }
 @media (min-width: 768px) {
-    .Product {
-      flex-direction: row;
-      align-items: center;
-    }
+  .Product {
+    flex-direction: row;
+    align-items: center;
+  }
 
-.Product > *{
+  .Product > * {
     margin: 0;
-}
+  }
 
-.Product_img {
-  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-keyboard.jpg");
-  min-width: 478px;
-  height: 425px;
- } 
+  .Product_img {
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-keyboard.jpg");
+    min-width: 478px;
+    height: 425px;
+  }
 }
 
 @media (min-width: 985px) {
-    .Product_content {
-      max-width: 445px;
-    }
+  .Product_content {
+    max-width: 445px;
+  }
 
-.Product_img {
-  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-keyboard.jpg?format=auto");
-  width: 540px;
-  height: 480px;
- }
+  .Product_img {
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-keyboard.jpg?format=auto");
+    width: 540px;
+    height: 480px;
+  }
 }
 
-
-
-
 .NextContent {
-  margin: 24px auto 118px; 
+  margin: 24px auto 118px;
   max-width: 374px;
 }
 
@@ -137,7 +136,7 @@ nav {
   gap: 24px;
 }
 
-.NextContent_images > div:first-of-type{
+.NextContent_images > div:first-of-type {
   background: #f16718
     url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-phone-and-keyboard.jpg")
     center center/cover no-repeat;
@@ -147,7 +146,7 @@ nav {
   position: relative;
 }
 
-.NextContent_images > div:last-of-type{
+.NextContent_images > div:last-of-type {
   background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-glass-and-keyboard.jpg")
     center center/cover no-repeat;
   min-width: 220px;
@@ -157,6 +156,7 @@ nav {
 .NextContent_details {
   display: flex;
   flex-direction: column;
+  text-align: center;
   max-width: 398px;
   margin: auto;
 }
@@ -169,43 +169,83 @@ nav {
     justify-content: center;
     gap: 30px;
   }
-  .NextContent_images  > div:first-of-type {
-    background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-phone-and-keyboard.jpg");
+  .NextContent_images > div:first-of-type {
+    background-image: #f16718
+      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-phone-and-keyboard.jpg");
     min-width: 214px;
-    height:320px;
+    height: 320px;
   }
-  .NextContent_images > div:last-of-type{
-    background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-glass-and-keyboard.jpg");
+  .NextContent_images > div:last-of-type {
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-glass-and-keyboard.jpg");
     width: 445px;
     height: 320px;
   }
-  .NextContent_details{
+  .NextContent_details {
     flex-direction: row;
     justify-content: space-between;
+    max-width: nones;
+    text-align: left;
+  }
+  .NextContent_details p {
+    max-width: 398px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .NextContent {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    max-width: none;
+    gap: 126px;
   }
 
-  .NextContent_images > div:first-of-type{
-    background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-phone-and-keyboard.jpg");
+  .NextContent_images > div:first-of-type {
+    background-image: #f16718
+      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-phone-and-keyboard.jpg");
     width: 225px;
     height: 480px;
   }
-  .NextContent_images > div:last-of-type{
-    background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-glass-and-keyboard.jpg");
+  .NextContent_images > div:last-of-type {
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-glass-and-keyboard.jpg");
     width: 445px;
-    height:480px;
+    height: 480px;
   }
-  .NextContent_details{
+  .NextContent_details {
     flex-direction: column;
   }
 }
 
-.FeatureSide{
-    display: flex;
-    justify-content: center;
+.FeatureSide {
+  display: flex;
+  justify-content: center;
 }
 
+.FeatureSide > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px 64px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 688px;
+}
+@media (min-width: 768px) {
+  .FeatureSide > ul {
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 80px;
+  }
+}
+@media (min-width: 1170px) {
+  .FeatureSide > ul {
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    width: 100%;
+  }
+}
 
 .Feature {
   display: flex;
@@ -213,29 +253,70 @@ nav {
   text-align: center;
   flex-direction: column;
   max-width: 374px;
-  gap: 40px;
+  gap: 48px;
 }
 
 .Feature_image {
+  display: flex;
+  justify-content: center;
   background: #f16718;
   width: 65px;
   height: 65px;
   border-radius: 16px;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
+}
+
+.feature_image img {
+  max-width: 25px;
+  max-height: 27px;
+}
+
+.Feature_details {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Feature_details h3 {
+  width: 196px;
 }
 
-.feature_image img{
-   max-width: 25px;
-    max height: 27px;
+@media (min-width: 768px) {
+  .Feature {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 281px;
+  }
+  .Feature_details {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1170px) {
+  .Feature {
+    max-width: 255px;
+  }
 }
 
-.Feature_Details{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+footer {
+  text-align: center;
+  margin-top: 104px;
+  padding: 0 0 46px;
+}
 
+@media (min-width: 768px) {
+  footer {
+    margin-top: 148px;
+  }
+}
+
+@media (min-width: 1170px) {
+  footer {
+    margin-top: 135px;
+  }
+}
+
+.NextImage {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .button {
@@ -252,14 +333,10 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
 }
-.BigImg{
-    border-radius: 10px;
-    overflow: hiddenw;
-}
 
-/*.button:hover {
-    cursor: pointer;
-}*/
+button:hover {
+  cursor: pointer;
+}
 
 .btn1 {
   background: #e8eff2;
@@ -280,9 +357,4 @@ nav {
 .btn2:hover,
 .btn2:focus {
   background: #ff9b62;
-}
-
-footer{
-    text-align: center;
-
 }
