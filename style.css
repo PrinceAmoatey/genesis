@@ -89,7 +89,7 @@ nav {
 }
 
 .Product_img {
-  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-keyboard.jpg")
+  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/mobile/image-keyboard.jpg")
     center/cover no-repeat;
   width: 372px;
   height: 331px;
@@ -105,7 +105,7 @@ nav {
   }
 
   .Product_img {
-    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-keyboard.jpg");
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/tablet/image-keyboard.jpg");
     min-width: 478px;
     height: 425px;
   }
@@ -117,7 +117,7 @@ nav {
   }
 
   .Product_img {
-    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-keyboard.jpg?format=auto");
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/desktop/image-keyboard.jpg?format=auto");
     width: 540px;
     height: 480px;
   }
@@ -137,7 +137,7 @@ nav {
 
 .NextContent_images > div:first-of-type {
   background: #f16718
-    url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-phone-and-keyboard.jpg")
+    url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/mobile/image-phone-and-keyboard.jpg")
     center center/cover no-repeat;
   background-blend-mode: multiply;
   min-width: 129px;
@@ -146,7 +146,7 @@ nav {
 }
 
 .NextContent_images > div:last-of-type {
-  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/mobile/image-glass-and-keyboard.jpg")
+  background: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/mobile/image-glass-and-keyboard.jpg")
     center center/cover no-repeat;
   min-width: 220px;
   height: 193px;
@@ -170,12 +170,12 @@ nav {
   }
   .NextContent_images > div:first-of-type {
     background-image: #f16718
-      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-phone-and-keyboard.jpg");
+      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/tablet/image-phone-and-keyboard.jpg");
     min-width: 214px;
     height: 320px;
   }
   .NextContent_images > div:last-of-type {
-    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/tablet/image-glass-and-keyboard.jpg");
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/tablet/image-glass-and-keyboard.jpg");
     width: 445px;
     height: 320px;
   }
@@ -201,12 +201,12 @@ nav {
 
   .NextContent_images > div:first-of-type {
     background-image: #f16718
-      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-phone-and-keyboard.jpg");
+      url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/desktop/image-phone-and-keyboard.jpg");
     width: 225px;
     height: 480px;
   }
   .NextContent_images > div:last-of-type {
-    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/starter-code/assets/desktop/image-glass-and-keyboard.jpg");
+    background-image: url("/Users/cobbyranks/Downloads/typemaster-pre-launch-landing-page/assets/desktop/image-glass-and-keyboard.jpg");
     width: 445px;
     height: 480px;
   }
@@ -323,10 +323,10 @@ footer {
   border: 0;
   border-radius: 8px;
   width: 175px;
-  height: 50px;
+  height: 58px;
   padding: 0 26px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 13px;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
