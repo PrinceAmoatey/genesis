@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  color: #4f7d7d;
+  color: #7b8bad;
   font-family: Barlow;
   font-weight: 500;
   font-family: Barlow, Arial, Helvetica, sans-serif;
@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line: height 28px;
+  line-height: 28px;
 }
 
 p {
@@ -180,7 +180,7 @@ nav {
   .NextContent_details {
     flex-direction: row;
     justify-content: space-between;
-    max-width: nones;
+    max-width: none;
     text-align: left;
   }
   .NextContent_details p {
